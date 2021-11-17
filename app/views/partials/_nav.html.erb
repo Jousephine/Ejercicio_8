@@ -8,4 +8,9 @@
     <li class="nav-item"> 
         <%= link_to "Escribir", new_articles_path, class:"nav-link" %>
     </li>
+    <%if user_signed_in? %>
+        <li class="nav-item">
+        <%= link_to "Cerrar sesión", new_articles_path, class:"nav-link" %>
+        </li>
+    <%end%>
 </nav>
